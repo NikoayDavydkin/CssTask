@@ -1,0 +1,292 @@
+/*общие стили*/
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../barlow/Barlow-Medium.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  background-color: #eff6ff;
+  color: #2a4a5c;
+}
+
+/*общий контент*/
+
+.mainContent {
+  width: 1214px;
+  height: 800px;
+  background-color: #2a4a5c;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+}
+
+/*левый блок с картикой*/
+
+.leftContent {
+  background-image: url("../img/bg.jpg");
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 607px;
+  height: 100%;
+}
+
+.logo {
+  width: 150px;
+  background-color: rgba(1, 1, 1, 0);
+}
+
+.logo img {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 150px;
+  background-color: rgba(1, 1, 1, 0);
+}
+
+/*правый блок с формами */
+
+.rightContent {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  width: 607px;
+  height: 100%;
+}
+
+/*text */
+
+.get {
+  width: 500px;
+  height: 40px;
+  font-size: 25px;
+  margin-top: 100px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+.there {
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+/*кнопки решистарции*/
+
+.buttons {
+  height: 40px;
+  width: 500px;
+  margin-top: 40px;
+  margin-left: 50px;
+  display: flex;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+.buttons button {
+  width: 220px;
+  height: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+}
+
+.buttonsLogo {
+  height: 100%;
+  width: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  padding-top: 7px;
+}
+
+.buttonsLogo img {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.buttonsText {
+  padding-top: 15px;
+  font-size: 13px;
+  color: white;
+  height: 30px;
+  width: 170px;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+#button_1 {
+  background-color: #255a9b;
+}
+
+#button_2 {
+  background-color: #0076b6;
+  margin-left: 50px;
+}
+
+/*разделаительный блок or*/
+
+.or {
+  display: flex;
+  margin-left: 50px;
+  width: 360px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  padding-left: 135px;
+  padding-top: 20px;
+}
+
+.orLine {
+  border-bottom: 1px solid silver;
+  width: 100px;
+  height: 9px;
+  background-color: rgba(9, 255, 0, 0);
+}
+
+/*инпуты*/
+
+.forms {
+  width: 500px;
+  height: 45px;
+  margin-left: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  display: flex;
+}
+
+.forms .input {
+  background-color: #0076b600;
+  padding-top: 5px;
+  padding-left: 5px;
+  width: 210px;
+  height: 40px;
+  font-size: 15px;
+  color: silver;
+  border: 1px solid silver;
+  cursor: pointer;
+}
+
+.forms .input:hover {
+  border-left: 1px solid #3698fb;
+}
+
+.input input {
+  background-color: #34b60000;
+  border: none;
+  width: 200px;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+/*text*/
+
+.investor {
+  margin-top: 50px;
+  width: 500px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.selectInvestor {
+  width: 500px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0);
+  margin-left: 50px;
+  font-size: 14px;
+  color: rgb(88, 86, 86);
+}
+
+/*селекторы выбора*/
+
+.selectors {
+  margin-top: 25px;
+  width: 500px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0);
+  margin-left: 50px;
+  display: flex;
+}
+
+.typeInvestor {
+  width: 125px;
+  height: 25px;
+  background-color: rgba(0, 255, 0, 0);
+}
+
+label {
+  width: 125px;
+  height: 25px;
+  background-color: rgba(0, 255, 0, 0);
+  cursor: pointer;
+}
+
+.realCheckbox {
+  display: none;
+}
+
+.customCheckbox {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid silver;
+  vertical-align: sub;
+}
+
+.realCheckbox:checked + .customCheckbox {
+  border: 4px solid #3698fb;
+  width: 11px;
+  height: 11px;
+}
+
+/*инфо текст*/
+
+.infoText {
+  padding: 5px;
+  width: 250px;
+  font-size: 15px;
+  margin-left: 60px;
+  margin-top: 25px;
+  background-color: white;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+.agree {
+  width: 500px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0);
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 14px;
+  vertical-align: sub;
+}
+
+.agree span {
+  margin-left: 5px;
+  background-color: white;
+}
+
+.agree span a {
+  background-color: white;
+  color: #3698fb;
+}
+
+/*кнопка создания аккаунта*/
+
+.createAccount {
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #3698fb;
+  width: 250px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
